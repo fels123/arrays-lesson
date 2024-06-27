@@ -144,3 +144,15 @@ courses.sort(function (a, b) {
 console.log(courses);
 
 // ***********************************************
+// Testing elements of an array
+const numbers = [1, 2, 3, -4];
+
+const allPositive = numbers.every(function (value) {
+  return value >= 0; // checking whether all positive number in array
+});
+
+const atleastOnePositive = numbers.some(function (value) {
+  return value >= 0; // checking whether atleast one positive number in array check
+});
+console.log(allPositive);
+console.log(atleastOnePositive);
