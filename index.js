@@ -51,3 +51,16 @@ const found = courses.find((course) => course.name === "a"); // if only one argu
 console.log(found);
 
 // ************************************************
+// Removing elements from an array
+const numbers = [1, 2, 3, 4];
+
+const last = numbers.pop(); // remove last element in an array
+console.log(numbers);
+
+const first = numbers.shift();
+console.log(first);
+
+const middle = numbers.splice(2, 2);
+console.log(numbers);
+
+// *********************************
