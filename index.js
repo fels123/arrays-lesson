@@ -126,33 +126,39 @@
 // numbers.reverse();
 // console.log(numbers);
 
-const courses = [
-  { id: 1, name: "node" },
-  { id: 2, name: "Js" },
-];
+// const courses = [
+//   { id: 1, name: "node" },
+//   { id: 2, name: "Js" },
+// ];
 
-courses.sort(function (a, b) {
-  //a<b =>-1
-  //a>b=1
-  //a===b=>0
-  const nameA = a.name.toUpperCase();
-  const nameB = b.name.toUpperCase();
-  if (nameA < nameB) return -1;
-  if (nameA > nameB) return 1;
-  return 0;
-});
-console.log(courses);
+// courses.sort(function (a, b) {
+//   //a<b =>-1
+//   //a>b=1
+//   //a===b=>0
+//   const nameA = a.name.toUpperCase();
+//   const nameB = b.name.toUpperCase();
+//   if (nameA < nameB) return -1;
+//   if (nameA > nameB) return 1;
+//   return 0;
+// });
+// console.log(courses);
 
-// ***********************************************
-// Testing elements of an array
-const numbers = [1, 2, 3, -4];
+// // ***********************************************
+// // Testing elements of an array
+// const numbers = [1, 2, 3, -4];
 
-const allPositive = numbers.every(function (value) {
-  return value >= 0; // checking whether all positive number in array
-});
+// const allPositive = numbers.every(function (value) {
+//   return value >= 0; // checking whether all positive number in array
+// });
 
-const atleastOnePositive = numbers.some(function (value) {
-  return value >= 0; // checking whether atleast one positive number in array check
-});
-console.log(allPositive);
-console.log(atleastOnePositive);
+// const atleastOnePositive = numbers.some(function (value) {
+//   return value >= 0; // checking whether atleast one positive number in array check
+// });
+// console.log(allPositive);
+// console.log(atleastOnePositive);
+
+// *********************************
+// filtering an array
+const numbers = [1, -1, 2, 3];
+const filterd = numbers.filter((value) => value >= 0);
+console.log(filterd);
