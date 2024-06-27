@@ -42,25 +42,40 @@
 
 // **********************************************
 // Function arrow
-const courses = [
-  { id: Math.random(), name: "a" },
-  { id: Math.random(), name: "b" },
-];
+// const courses = [
+//   { id: Math.random(), name: "a" },
+//   { id: Math.random(), name: "b" },
+// ];
 
-const found = courses.find((course) => course.name === "a"); // if only one argument then return and curly braces is not needed
-console.log(found);
+// const found = courses.find((course) => course.name === "a"); // if only one argument then return and curly braces is not needed
+// console.log(found);
 
-// ************************************************
-// Removing elements from an array
-const numbers = [1, 2, 3, 4];
+// // ************************************************
+// // Removing elements from an array
+// const numbers = [1, 2, 3, 4];
 
-const last = numbers.pop(); // remove last element in an array
-console.log(numbers);
+// const last = numbers.pop(); // remove last element in an array
+// console.log(numbers);
 
-const first = numbers.shift();
-console.log(first);
+// const first = numbers.shift();
+// console.log(first);
 
-const middle = numbers.splice(2, 2);
-console.log(numbers);
+// const middle = numbers.splice(2, 2);
+// console.log(numbers);
 
 // *********************************
+// emptying all elements of an array
+// let numbers = [1, 2, 3, 4]; //this will not be removed since another is pointing to it
+// let another = numbers; //
+// solution-1
+// numbers = [];//recommended
+
+// solution-2
+// numbers.splice(0, numbers.length);
+
+// solution-3
+// numbers.length = 0; //recommended
+
+// console.log(another);
+
+// ************************************
