@@ -116,3 +116,31 @@
 
 // const combined = parts.join("-");
 // console.log(combined);
+
+// ***************************
+//sorting arrays
+// const numbers = [2, 3, 1];
+// numbers.sort();
+// console.log(numbers);
+
+// numbers.reverse();
+// console.log(numbers);
+
+const courses = [
+  { id: 1, name: "node" },
+  { id: 2, name: "Js" },
+];
+
+courses.sort(function (a, b) {
+  //a<b =>-1
+  //a>b=1
+  //a===b=>0
+  const nameA = a.name.toUpperCase();
+  const nameB = b.name.toUpperCase();
+  if (nameA < nameB) return -1;
+  if (nameA > nameB) return 1;
+  return 0;
+});
+console.log(courses);
+
+// ***********************************************
