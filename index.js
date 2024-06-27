@@ -91,8 +91,15 @@
 
 // *********************************************
 //Spread Operator to achieve the same result of combining 2 arrays
-const first = [1, 2, 3];
-const second = [4, 5, 6];
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
 
-const combined = [...first, ...second]; //same result as const combined = first.concat(second)
-const copy = [...combined]; // same const sliced = combined.slice(2);
+// const combined = [...first, ...second]; //same result as const combined = first.concat(second)
+// const copy = [...combined]; // same const sliced = combined.slice(2);
+
+//************************************* */
+// Iterating an Array
+const numbers = [1, 2, 3];
+
+for (let number of numbers) console.log(number);
+numbers.forEach((number, index) => console.log(index, number));
