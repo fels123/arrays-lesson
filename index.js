@@ -25,19 +25,29 @@
 
 // *******************************************************
 // finding elements in an array in  refrence type
+// const courses = [
+//   { id: Math.random(), name: "a" },
+//   { id: Math.random(), name: "b" },
+// ];
+
+// const found = courses.find(function (course) {
+//   return course.name === "a";
+// });
+// console.log(found);
+// //other method
+// const course = courses.findIndex(function (course) {
+//   return course.name === "a";
+// });
+// console.log(course);
+
+// **********************************************
+// Function arrow
 const courses = [
   { id: Math.random(), name: "a" },
   { id: Math.random(), name: "b" },
 ];
 
-const found = courses.find(function (course) {
-  return course.name === "a";
-});
+const found = courses.find((course) => course.name === "a"); // if only one argument then return and curly braces is not needed
 console.log(found);
-//other method
-const course = courses.findIndex(function (course) {
-  return course.name === "a";
-});
-console.log(course);
 
-// **********************************************
+// ************************************************
