@@ -99,7 +99,20 @@
 
 //************************************* */
 // Iterating an Array
-const numbers = [1, 2, 3];
+// const numbers = [1, 2, 3];
 
-for (let number of numbers) console.log(number);
-numbers.forEach((number, index) => console.log(index, number));
+// for (let number of numbers) console.log(number);
+// numbers.forEach((number, index) => console.log(index, number));
+
+// *************************************************
+//Joining an array especially usefull in urls
+// const number = [1, 2, 3];
+// const joined = number.join(",");
+// console.log(joined);
+
+// const message = "This is my first msg";
+// const parts = message.split(" ");
+// console.log(parts);
+
+// const combined = parts.join("-");
+// console.log(combined);
