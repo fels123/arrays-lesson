@@ -159,6 +159,49 @@
 
 // *********************************
 // filtering an array
-const numbers = [1, -1, 2, 3];
-const filterd = numbers.filter((value) => value >= 0);
-console.log(filterd);
+// const numbers = [1, -1, 2, 3];
+// const filterd = numbers.filter((value) => value >= 0);
+// console.log(filterd);
+
+// ***************************
+//maping an array
+// const numbers = [1, 2, 3, 4];
+// // const filtered = numbers.filter((n) => (n) => 0);
+// // const items = filtered.map((n) => "<li>" + n + "</li>");
+
+// // const html = "<ul>" + items.join("") + "</ul>";
+// // console.log(html);
+// numbers
+//   .filter((n) => (n) => 0)
+//   .map((n) => ({
+//     value: n,
+//   }));
+// // const items = filtered.map(
+// //   (n) => ({
+// //     value: n,
+// //   })
+// //   const obj = { value: n };
+// //   return obj;
+// // );
+
+// console.log(items);
+
+//Reducing an array
+
+const numbers = [1, -1, 3, 4]; //calculate sum of numbers
+
+let sum = 0;
+for (let n of numbers) sum += n;
+console.log(sum);
+
+//Same but other method
+const sums = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
+console.log(sums);
+
+//same again
+const sum2 = numbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue
+);
+console.log(sum2);
